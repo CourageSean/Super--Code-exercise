@@ -1,0 +1,150 @@
+body {
+  width: 100%;
+}
+.box-1 {
+  width: 200px;
+  height: 200px;
+  background-color: crimson;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 100px;
+
+  transition: 1s;
+}
+
+.box-1:hover {
+  transform: rotateZ(90deg) scale(1.5) translate(100px);
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+section > div {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 7px;
+  transition: 1s;
+}
+
+.translate:hover {
+  transform: translate(50px, 50px);
+}
+
+.translateX:hover {
+  transform: translateX(50px);
+}
+
+.translateY:hover {
+  transform: translateY(50px);
+}
+
+.rotate:hover {
+  transform: rotate(45deg);
+}
+
+.scale:hover {
+  transform: scale(1.5);
+}
+
+.skew:hover {
+  transform: skew(45deg);
+}
+
+/*========== Bar =================*/
+
+.Bar {
+  display: block;
+}
+
+.bar {
+  width: 30px;
+  height: 40px;
+  background-color: red;
+  border-left: black solid 2px;
+}
+
+.bar:hover {
+  width: 400px;
+}
+
+/*================= Race =====================*/
+article > div {
+  width: 50px;
+  height: 50px;
+}
+
+.red {
+  background-color: red;
+  transition: 3s 0s ease-out;
+}
+.green {
+  background-color: green;
+  margin-top: 10px;
+  transition: 2s 1s;
+}
+
+article:hover > div {
+  transform: translateX(400px);
+}
+/*================ BALLS ================*/
+footer {
+  padding-top: 100px;
+  display: flex;
+  justify-content: baseline;
+}
+
+.purple {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  border-radius: 50%;
+  transition: 2s;
+}
+
+.blue {
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+  border-radius: 50%;
+  align-self: flex-end;
+  transform: translateX(50px);
+  transition: 1s 1s ease-in;
+}
+
+.purple:active + .blue {
+  transform: translateX(300px);
+}
+
+.purple:active {
+  transform: translateX(75px);
+}
+
+/*===========  pfeil/ kugel ==========*/
+header {
+  padding-top: 100px;
+}
+.pfeil {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation-name: upDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes upDown {
+  0% {
+  }
+
+  50% {
+    transform: translateY(20px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
