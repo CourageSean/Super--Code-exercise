@@ -1,0 +1,22 @@
+section{
+  width: 300px;
+   height: 400px;
+   position:relative;
+   overflow:hidden;
+ }
+ div{
+   position:absolute;
+   height: 400px;
+   right: 0;
+   left: 0;
+   bottom: -100%;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   color:#fff;
+   background: rgba(0,0,0,.3);
+   transition:all 1s ease;
+ }
+ section:hover div{
+   bottom: 0;
+ }
