@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cormorant Garamond";
+  background-color: rgb(233, 233, 224);
+  
+}
+
+#news{
+  text-align: center;
+  font-size: 2.3rem;
+  
+}
+
+section {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-auto-rows: min-content(50px);
+  gap:10px;
+  padding: 2%;
+  padding-top: 1%;
+  
+  
+}
+
+footer {
+  grid-column: 1/4;
+  grid-row:1/2 ;
+  display: flex;
+  justify-content: space-around;
+  border-top: double 5px;
+  border-bottom: double 5px;
+}
+
+
+/*====================== Header Section ==================*/
+header{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  justify-self: center;
+}
+
+h1{
+ font-weight: 900;
+ font-size: 2rem;
+}
+
+/* ====================== Header END ==============*/
+/*================= Left Articles ================*/
+.articles-div{
+  grid-column: 1/2;
+grid-row: 3/4;
+display: grid;
+grid-template-columns: 1fr 1fr;
+column-gap: 10px;
+row-gap: 0;
+
+}
+
+.articles-div h2{
+ font-size: 1.3rem;
+ font-weight: bolder;
+  
+}
+.articles-div p{
+  font-weight: 600;
+}
+
+
+/*================= Left Articles END ================*/
+
+
+/*================ Kitchen IMG ======================*/
+img{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  /* min-width: 400px;*/
+height: 550px;
+
+  object-fit: content;
+  width: 100%;
+  /* max-height: 100%; */
+  transform: scale(0.98);
+  align-self: start;
+}
+figcaption{
+  font-style: italic;
+}
+/*================ Kitchen IMG END ======================*/
+/*========================== Aside Right =========================*/
+aside{
+  grid-column: 3/4;
+  grid-row: 2/4;
+  display: grid;
+  justify-content: space-between;
+  gap: 20px;
+  /* align-content: start; */
+  height:500px
+ 
+}
+aside h3:nth-of-type(1){
+  text-align: center;
+  font-weight: 800;
+}
+aside div{
+  border: double 5px ;
+  
+}
+
+aside div:nth-of-type(1){
+display: grid;
+place-items: center;
+}
+
+
+aside div:nth-of-type(1) p{
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+aside div:nth-of-type(2){
+  display: grid;
+  place-items: center;
+  row-gap: 0;
+  
+}
+
+aside div:nth-of-type(2) h3{
+  font-size: 1.3rem;
+}
+
+aside div:nth-of-type(2) p:nth-of-type(1){
+  width: 85%;
+  align-self: start;
+}
+aside div:nth-of-type(2) p:nth-of-type(2){
+  align-self: start;
+  text-decoration: underline #000;
+  color:gray;
+  padding-bottom: 7px;
+  padding-top: 0;
+  font-weight: bolder;
+}
+
+aside img{
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  transform: scale(0.8);
+  height: 200px;
+}
+
+/*======================= Aside Right END =========================*/
